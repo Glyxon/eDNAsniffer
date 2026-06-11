@@ -8,6 +8,8 @@ Developed at Glyxon Biolabs (Mexico City) and BioOlympia (Washington)
 
 ## 📁 Repository Structure
 
+```text
+eDNA-Sniffer/
 ├── firmware/             # MicroPython source code for ESP32
 │   ├── boot.py           # Device initialization and WiFi setup
 │   ├── main.py           # Main asynchronous execution loop & sensor logging
