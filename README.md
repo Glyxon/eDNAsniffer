@@ -234,6 +234,14 @@ Captured air filters undergo standard molecular processing to extract and amplif
 DNA retrieval and amplification of target sequences
 To analyze bacterial communities from an environmental air sampler, the workflow follows a standard molecular biology pipeline: converting the physical sample into purified nucleic acids, followed by targeted enzymatic amplification.
 Because you are targeting the 16S rRNA gene (a universal phylogenetic marker for prokaryotes), the protocol focuses on total community DNA extraction rather than isolating specific living cultures.
+
+
+
+<img width="585" height="558" alt="Image" src="https://github.com/user-attachments/assets/8c342b89-7c61-4cbf-9327-bef35aec5410" />
+0.2um filters
+
+
+
 Phase 1: Sample Retrieval & Mechanical Lysis
 Environmental samples on nitrocellulose filters typically contain low biomass and robust structures like bacterial cell walls or spores. Efficient lysis is critical to obtaining a representative yield.
 •	Filter Harvesting: Using sterile forceps in a clean laminar flow hood, remove the nitrocellulose filter from the Venturi sampler.
