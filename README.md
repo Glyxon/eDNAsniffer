@@ -9,7 +9,7 @@ Contact the creators:
 Dr. David Castillo · glyxonbiolabs@gmail.com  ·  +52 (55) 4140 7607​
 BioOlympia (Matt + Zee) · BioOlympia@gmail.com  ·  +1 (971) 319-2665
 
-<img width="1024" height="559" alt="Image" src="https://github.com/user-attachments/assets/b1524525-8f52-451d-b255-beba5abf7768" />
+
 
 
 
