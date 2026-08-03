@@ -24,6 +24,7 @@ The eDNA Sniffer combines an **ESP32 microcontroller** (Ideaspark board) with an
 
 
 <img width="618" height="661" alt="Image" src="https://github.com/user-attachments/assets/64577ef0-961d-4f89-842c-748ec1e094f6" />
+
 Airflow Diagram (Sampling Enclosure)
 
 
