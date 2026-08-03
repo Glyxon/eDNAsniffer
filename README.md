@@ -64,7 +64,7 @@ By utilizing the different sensor placement options shown in the diagram, you ca
 
 ### Key Hardware Components
 
-* **Microcontroller:** ESP32-WROOM-32E (Ideaspark development board with built-in display).
+* **Microcontroller:** ESP32-S3 FT Feather  (Adafuit development board with built-in display).
 * **Air Sampling Mechanism:** 3010 Brushless Fan (5V) paired with a Venturi geometry sampling chamber.
 * **Desiccant Chamber:** Indicating silica gel to maintain low humidity and prevent DNA degradation post-collection.
 * **Capture Media:** Nitrocellulose filter paper (0.2 to 1 µm) for fine eDNA trapping, supported by optional bacterial cellulose matrices (`Komagataeibacter xylinus`) can be provided by Glyxon BioLabs if you need some.
