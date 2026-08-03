@@ -192,10 +192,6 @@ Solder one leg of the photoresistor and one leg of your 10kΩ resistor into the 
 ⚠️ Important Safety Check: Ensure your brushless fan wires do not accidentally touch the 3.3V rail. Connecting a 5V inductive load directly to the 3.3V digital rail can permanently destabilize or burn out the ESP32 inner voltage regulator. Keep the fan connections strictly on the 5V/VIN pin.
 
 
-
-
-
-
 ---
 
 ## 🧬 Downstream Molecular Workflow (16S eDNA)
@@ -204,6 +200,42 @@ Captured air filters undergo standard molecular processing to extract and amplif
 
 1. **Harvesting & Lysis:** Section the nitrocellulose filter using sterile tools. Apply a co-extraction strategy (mild detergent incubation followed by short 30s bead-beating) to release intracellular DNA from spores without destroying free extracellular strands.
 2. **Purification:** Use a silica spin-column architecture (e.g., Omega Bio-tek) via **Bind-Wash-Elute** protocols to clear airborne PCR inhibitors (soot, humic acids).
+
+
+DNA retrieval and amplification of target sequences
+To analyze bacterial communities from an environmental air sampler, the workflow follows a standard molecular biology pipeline: converting the physical sample into purified nucleic acids, followed by targeted enzymatic amplification.
+Because you are targeting the 16S rRNA gene (a universal phylogenetic marker for prokaryotes), the protocol focuses on total community DNA extraction rather than isolating specific living cultures.
+Phase 1: Sample Retrieval & Mechanical Lysis
+Environmental samples on nitrocellulose filters typically contain low biomass and robust structures like bacterial cell walls or spores. Efficient lysis is critical to obtaining a representative yield.
+•	Filter Harvesting: Using sterile forceps in a clean laminar flow hood, remove the nitrocellulose filter from the Venturi sampler.
+•	Sectioning: Cut the filter into smaller pieces using a sterile scalpel blade to ensure it fits entirely within the lysis vessel (typically a 2 mL bead-beating tube).
+•	Lysis Buffer & Homogenization: Add the specialized lysis buffer provided in your Omega Bio-tek isolation kit. For environmental samples, mechanical disruption such as bead beating or vortexing with silica/zirconia beads is highly recommended alongside chemical lysis to break open tough Gram-positive cell walls and spores.
+
+
+Phase 2: Total DNA Purification (Omega Bio-tek Kit Principles)
+Commercial kits typically utilize a silica spin-column architecture based on a "Bind-Wash-Elute" mechanic:
+1.	Clearing the Lysate: After homogenization and centrifugation, the crude lysate is separated from the filter debris and unlysed particulates. The supernatant containing the solubilized DNA is transferred to a clean tube.
+2.	Binding: An adjustment buffer (usually containing chaotropic salts and ethanol) is added to the lysate. This condition forces the DNA backbone to bind selectively to the silica membrane inside the spin column when centrifuged.
+3.	Washing: The bound DNA is washed with alcohol-based wash buffers provided in the kit. This step removes residual proteins, cellular metabolites, metabolic byproducts, and potential PCR inhibitors collected from the ambient air.
+4.	Elution: After drying the membrane completely via an empty centrifugation step, a low-salt elution buffer (or sterile nuclease-free water) is applied. This releases the purified total genomic DNA (gDNA) into a clean collection tube.
+Phase 3: 16S rRNA PCR Amplification
+With the total gDNA purified, you can target the hypervariable regions of the bacterial 16S rRNA gene. Because you are using Pfu DNA Polymerase (a high-fidelity, proofreading enzyme) instead of standard Taq, note that it requires specific reaction conditions (such as longer extension times and blunt-end generation).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 3. **Amplification (Pfu Polymerase):** Target the universal 16S rRNA gene (approx. 1.5 kb using 27F/1492R primers) with high-fidelity Pfu DNA Polymerase.
    * *Initial Denaturation:* 95°C for 2–5 min
    * *30–35 Cycles:* 95°C (30s) → 52–55°C (30s) → 72°C (2–3 min extension)
