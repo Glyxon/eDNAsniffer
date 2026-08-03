@@ -306,6 +306,9 @@ With the total gDNA purified, you can target the hypervariable regions of the ba
 * **Visualization:** Generate relative abundance stacked bar charts, homology heatmaps, and phylogenetic trees via **ITOL** or **Microreact**.
 
 
+<img width="997" height="1024" alt="Image" src="https://github.com/user-attachments/assets/ee433d03-5206-4cdf-9ba4-39e075c46aa0" />
+
+
 
 <img width="997" height="1024" alt="Image" src="https://github.com/user-attachments/assets/019b1fc4-e435-4594-8808-8c1867efd06d" />
 
