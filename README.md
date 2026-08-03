@@ -238,6 +238,7 @@ Because you are targeting the 16S rRNA gene (a universal phylogenetic marker for
 
 
 <img width="585" height="558" alt="Image" src="https://github.com/user-attachments/assets/8c342b89-7c61-4cbf-9327-bef35aec5410" />
+
 0.2um filters
 
 
