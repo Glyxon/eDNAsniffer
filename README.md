@@ -64,6 +64,16 @@ By utilizing the different sensor placement options shown in the diagram, you ca
 
 ### Key Hardware Components
 
+<img width="515" height="388" alt="Image" src="https://github.com/user-attachments/assets/1bc7d3f2-c3f6-4206-9b7e-09b00b905344" />
+
+<img width="418" height="429" alt="Image" src="https://github.com/user-attachments/assets/830fb9da-dde7-412b-9665-9112efce569e" />
+
+<img width="418" height="476" alt="Image" src="https://github.com/user-attachments/assets/e327f213-0d71-40a3-b8a0-d523c4371300" />
+
+
+
+
+
 * **Microcontroller:** ESP32-S3 FT Feather  (Adafuit development board with built-in display).
 * **Air Sampling Mechanism:** 3010 Brushless Fan (5V) paired with a Venturi geometry sampling chamber.
 * **Desiccant Chamber:** Indicating silica gel to maintain low humidity and prevent DNA degradation post-collection.
