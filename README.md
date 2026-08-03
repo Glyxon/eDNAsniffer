@@ -2,7 +2,7 @@
 
 An open-source, low-cost, Arduino-powered airborne environmental DNA (eDNA) sampling and monitoring station. 
 
-Developed as part of decentralized biotechnology and open hardware initiatives (compatible with **Glyxon BioLabs** frameworks), this project integrates physical air filtration, environmental sensor telemetry (temperature, humidity, pressure, gas quality, and light), and a streamlined molecular biology protocol for downstream 16S rRNA gene amplification and taxonomic profiling.
+Developed as part of decentralized biotechnology and open hardware initiatives (Developed by **Glyxon BioLabs** and **BioOlympia**), this project integrates physical air filtration, environmental sensor telemetry (temperature, humidity, pressure, gas quality, and light), and a streamlined molecular biology protocol for downstream 16S rRNA gene amplification and taxonomic profiling. This project is presented at DEFCON 34. 
 
 ---
 
