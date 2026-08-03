@@ -23,6 +23,12 @@ The eDNA Sniffer combines an **ESP32 microcontroller** (Ideaspark board) with an
 
 Airflow Diagram (Sampling Enclosure)
 
+
+https://github.com/Glyxon/eDNAsniffer
+
+
+
+
 To build the physical collector using your boards and the fan, you need to design or adapt a small airtight container (this could be a 3D-printed enclosure or a modified plastic container):
 
 
