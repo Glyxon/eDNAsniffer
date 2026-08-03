@@ -215,6 +215,22 @@ Solder one leg of the photoresistor and one leg of your 10kΩ resistor into the 
 ⚠️ Important Safety Check: Ensure your brushless fan wires do not accidentally touch the 3.3V rail. Connecting a 5V inductive load directly to the 3.3V digital rail can permanently destabilize or burn out the ESP32 inner voltage regulator. Keep the fan connections strictly on the 5V/VIN pin.
 
 
+<img width="2048" height="1151" alt="Image" src="https://github.com/user-attachments/assets/38f4b750-1dce-436e-9376-c3dbb8062b44" />
+https://github.com/user-attachments/assets/008a1193-c7c1-4f29-b75c-39778a0f0ac4
+<img width="1268" height="2048" alt="Image" src="https://github.com/user-attachments/assets/63c743b5-eea8-4ed4-9bfb-f446d071e825" />
+<img width="2048" height="1629" alt="Image" src="https://github.com/user-attachments/assets/8398122b-e5b4-4c6c-b3b7-d111ff9aa760" />
+<img width="2048" height="1614" alt="Image" src="https://github.com/user-attachments/assets/0e27ecb2-4191-494e-982b-6020f47d03b0" />
+<img width="2048" height="882" alt="Image" src="https://github.com/user-attachments/assets/075a73ce-3d93-4e1d-abc5-0c2b0335a67a" />
+
+
+
+
+
+
+
+
+
+
 ---
 
 ## 🧬 Downstream Molecular Workflow (16S eDNA)
