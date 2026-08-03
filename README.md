@@ -4,6 +4,12 @@ An open-source, low-cost, Arduino-powered airborne environmental DNA (eDNA) samp
 
 Developed as part of decentralized biotechnology and open hardware initiatives (Developed by **Glyxon BioLabs** and **BioOlympia**), this project integrates physical air filtration, environmental sensor telemetry (temperature, humidity, pressure, gas quality, and light), and a streamlined molecular biology protocol for downstream 16S rRNA gene amplification and taxonomic profiling. This project is presented at DEFCON 34. 
 
+Contact the creators: 
+
+Dr. David Castillo · glyxonbiolabs@gmail.com  ·  +52 (55) 4140 7607​
+BioOlympia (Matt + Zee) · BioOlympia@gmail.com  ·  +1 (971) 319-2665​
+
+
 ---
 
 ## 🛠️ System Overview & Architecture
