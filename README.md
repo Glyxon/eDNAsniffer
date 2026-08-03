@@ -70,6 +70,7 @@ By utilizing the different sensor placement options shown in the diagram, you ca
 
 <img width="418" height="476" alt="Image" src="https://github.com/user-attachments/assets/e327f213-0d71-40a3-b8a0-d523c4371300" />
 
+<img width="447" height="447" alt="Image" src="https://github.com/user-attachments/assets/b4f45bdf-0776-4703-8053-67cbc8d05ee1" />
 
 
 
