@@ -1,63 +1,25 @@
-# eDNA Sniffer v1.0 🔬💨
+# eDNA Sniffer: Open-Source Airborne Environmental DNA Sampler
 
-An open-source, low-cost autonomous environmental monitoring station and biological aerosol sampler. The eDNA Sniffer pairs a Smart Citizen-like telemetry suite (VOCs, eCO2, Temperature, Humidity, Barometric Pressure) with a microfluidic Venturi-effect active trap to capture and preserve environmental DNA (eDNA) for 16S rRNA microbiome profiling.
+> **Version:** 1.0v / 1.1v  
+> **Status:** Open Hardware & Frugal Molecular Biology Protocol
 
-Developed at Glyxon Biolabs (Mexico City) and BioOlympia (Washington)
-
----
-
-## 📁 Repository Structure
-
-```text
-eDNA-Sniffer/
-├── firmware/             # MicroPython source code for ESP32
-│   ├── boot.py           # Device initialization and WiFi setup
-│   ├── main.py           # Main asynchronous execution loop & sensor logging
-│   └── drivers/          # Hardware driver scripts for I2C sensors
-│       ├── ens160.py     # Driver for ENS160 (VOC / eCO2)
-│       ├── aht2x.py      # Driver for AHT21 (Temp / Hum)
-│       └── bmp280.py     # Driver for BMP280 (Barometric Pressure)
-│
-├── hardware/             # Schematics and PCB layouts
-│   ├── schematics/       # Wiring diagrams (Fritzing / KiCad)
-│   └── pinout_map.md     # GPIO allocation table for ESP32
-│
-├── 3d_models/            # CAD files for digital manufacturing
-│   ├── venturi_tube.stl  # Monolithic Venturi colector (PLA)
-│   ├── trap_housing.stl  # Filter holder (0.22um membrane) & Silica bed enclosure
-│   └── main_case.stl     # Weatherproof main enclosure for electronics
-│
-└── docs/                 # Methodology, protocols, and BOM
-    ├── protocol_16S.md   # Post-capture lysis and PCR amplicons protocol
-    └── bill_of_materials.md # Flat cost matrix for electronic components
+The **eDNA Sniffer** is an open-hardware air sampling node designed to capture airborne environmental DNA (eDNA) bound to water micro-droplets, spores, pollen, or PM2.5/PM10 suspended particulate matter. By combining a Venturi fluid-dynamics capture enclosure with ESP32 sensor telemetry and a 16S rRNA molecular pipeline, the system allows simultaneous collection of biological material and environmental parameters (humidity, pressure, eCO2, TVOC, ambient light).
 
 ---
 
-## 🛠️ System Overview & Logic
-
-The eDNA Sniffer operates as an autarkic, state-solid device:
-1. **Telemetry Loop:** The ESP32 continuously polls the sensor suite via a shared I2C bus.
-2. **Conditional Capture:** The software triggers the 5V blower fan via a MOSFET switch only when targeted environmental conditions (e.g., specific humidity/temperature thresholds or VOC spikes) are met.
-3. **Aerodynamic Impact:** Air is forced through a 3D-printed Venturi tube, accelerating particles and stamping bioaerosols directly onto a 0.22 µm Nitrocellulose membrane.
-4. **In-situ Preservation:** An orange-indicating silica gel bed immediately dehydrates the chamber post-impact, halting nuclease degradation without the need for active refrigeration.
-
----
-
-## ⚡ Pinout Mapping (ESP32 DevKit v1)
-
-| ESP32 GPIO | Component Pin | Description |
-| :--- | :--- | :--- |
-| **3.3V** | VCC (Sensors) | Power line for ENS160, AHT21, BMP280 |
-| **GND** | GND (All) | Common Ground reference |
-| **VIN (5V)**| V+ (MOSFET) | Raw USB 5V rail to power the 4010 Blower Fan |
-| **GPIO 21** | SDA | Shared I2C Data line (ENS160 / AHT21 / BMP280) |
-| **GPIO 22** | SCL | Shared I2C Clock line (ENS160 / AHT21 / BMP280) |
-| **GPIO 23** | SIG / GATE | MOSFET Gate trigger to activate the fan |
-| **GPIO 34** | ADC1_CH6 | Analog input from GL5516 LDR / 10kΩ voltage divider |
+## Table of Contents
+1. [Physical Concept & Fluid Dynamics](#1-physical-concept--fluid-dynamics)
+2. [Hardware & Wiring Matrix](#2-hardware--wiring-matrix)
+3. [Firmware & ESP32 Implementation](#3-firmware--esp32-implementation)
+4. [Molecular Biology Protocol (Extraction & 16S PCR)](#4-molecular-biology-protocol-extraction--16s-pcr)
+5. [Bioinformatics & Taxonomic Pipeline](#5-bioinformatics--taxonomic-pipeline)
+6. [Troubleshooting Guide](#6-troubleshooting-guide)
+7. [Reporting Potential Biological Threats](#7-reporting-potential-biological-threats)
 
 ---
 
-## 📜 License
-This project is licensed under the **CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S)**. Anyone can manufacture, modify, and distribute this design, provided all derivative works remain open-source under the same terms.
+## 1. Physical Concept & Fluid Dynamics
 
-**Glyxon Biolabs - 2026**
+The sampling enclosure forces ambient air through a physical trap using a 3010 cooling fan/blower, preserving the sample with an integrated desiccant chamber.
+
+### Airflow Architecture
