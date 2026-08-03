@@ -225,6 +225,12 @@ Captured air filters undergo standard molecular processing to extract and amplif
 2. **Purification:** Use a silica spin-column architecture (e.g., Omega Bio-tek) via **Bind-Wash-Elute** protocols to clear airborne PCR inhibitors (soot, humic acids).
 
 
+<img width="596" height="649" alt="Image" src="https://github.com/user-attachments/assets/84a3c7e7-92be-4e86-9211-5e0fc2b1c6fa" />
+
+
+
+
+
 DNA retrieval and amplification of target sequences
 To analyze bacterial communities from an environmental air sampler, the workflow follows a standard molecular biology pipeline: converting the physical sample into purified nucleic acids, followed by targeted enzymatic amplification.
 Because you are targeting the 16S rRNA gene (a universal phylogenetic marker for prokaryotes), the protocol focuses on total community DNA extraction rather than isolating specific living cultures.
