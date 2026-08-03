@@ -260,6 +260,7 @@ Phase 3: 16S rRNA PCR Amplification
 With the total gDNA purified, you can target the hypervariable regions of the bacterial 16S rRNA gene. Because you are using Pfu DNA Polymerase (a high-fidelity, proofreading enzyme) instead of standard Taq, note that it requires specific reaction conditions (such as longer extension times and blunt-end generation).
 
 
+<img width="709" height="406" alt="Image" src="https://github.com/user-attachments/assets/19394ff9-da62-477b-a5f5-7de032c91f53" />
 
 
 
